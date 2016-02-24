@@ -5,18 +5,18 @@ import java.util.Arrays;
 /**
  * This is a sort of failed attempt at implementing mergesort, I wussed out and did a bubble sort on the final step.  It's a good overview of how it works though
  */
-public class MergeSortEx1 {
+public class MergeSortEx1Fail {
 
 
     public static void main(String a[]){
 
         int[] arr = {33, 23, 54, 13, 84, 23, 87, 42, 39, 84};
 
-        MergeSortEx1 mergeSortEx1 = new MergeSortEx1();
+        MergeSortEx1Fail mergeSortEx1Fail = new MergeSortEx1Fail();
 
         System.out.println(Arrays.toString(arr));
 
-        mergeSortEx1.sort(arr);
+        mergeSortEx1Fail.sort(arr);
 
         System.out.println(Arrays.toString(arr));
 
@@ -41,7 +41,6 @@ public class MergeSortEx1 {
     }
 
     private void sortThem(int[] arr, int start, int end) {
-        int runner = start;
         int[] temp = new int[(end - start) + 1];
 
         for ( int i = start; i <= end; i++ ) {
